@@ -1,14 +1,14 @@
 import React from "react";
 
 function EyesOnMe() {
-    function focus() {
+    function handleFocus() {
         console.log("Good!");
     };
-    function blur() {
+    function handleBlur() {
         console.log("Hey! Eyes on me!");
     }
     return(
-        <button onClick = {() => {focus(); blur()}}>Eyes on me</button>
+        <button onFocus={handleFocus} onBlur={handleBlur}>Eyes on me</button>
     )
 }
 
